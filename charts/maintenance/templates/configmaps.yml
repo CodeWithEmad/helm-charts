@@ -1,0 +1,148 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "maintenance.fullname" . }}-caddy
+  namespace: {{ include "maintenance.namespace" . }}
+  labels:
+    {{- include "maintenance.labels" . | nindent 4 }}
+data:
+  Caddyfile: |
+    :80 {
+      root * /usr/share/caddy
+      file_server
+
+      @404 {
+        not file
+      }
+      handle @404 {
+        rewrite * /index.html
+        file_server
+      }
+    }
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "maintenance.fullname" . }}-html
+  namespace: {{ include "maintenance.namespace" . }}
+  labels:
+    {{- include "maintenance.labels" . | nindent 4 }}
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="{{ .Values.maintenance.faviconURL }}">
+        <title>{{ .Values.maintenance.title }}</title>
+        <style>
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+                min-height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: Inter, sans-serif;
+                background-color: #F7F7F7;
+            }
+            .wrapper {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+                max-width: 100%;
+                box-sizing: border-box;
+            }
+            .wrapper .message {
+                text-align: center;
+                font-family: Inter, sans-serif;
+                font-size: 48px;
+                font-weight: 700;
+                line-height: 1.2;
+                word-wrap: break-word;
+                margin: 16px 0;
+            }
+            .wrapper .caption {
+                font-family: Inter, sans-serif;
+                font-size: 20px;
+                line-height: 1.33;
+                word-wrap: break-word;
+                margin: 0;
+                color: #616173;
+            }
+            .wrapper .caption a {
+                font-weight: bold;
+                text-decoration: none;
+                color: #555564;
+            }
+            .wrapper .banner {
+                width: 100%;
+                height: auto;
+            }
+            /* Small screens (smaller than 576px) */
+            @media (max-width: 575px) {
+                .wrapper .message {
+                    font-size: 32px;
+                }
+
+                .wrapper .caption {
+                    font-size: 16px;
+                }
+            }
+            /* Small tablets and large smartphones (landscape) */
+            @media (min-width: 576px) and (max-width: 767px) {
+                .wrapper .message {
+                    font-size: 36px;
+                }
+
+                .wrapper .caption {
+                    font-size: 18px;
+                }
+            }
+            /* Medium devices (tablets, 768px and up) */
+            @media (min-width: 768px) and (max-width: 991px) {
+                .wrapper .message {
+                    font-size: 42px;
+                }
+
+                .wrapper .caption {
+                    font-size: 19px;
+                }
+            }
+            /* Large devices (desktops, 992px and up) */
+            @media (min-width: 992px) and (max-width: 1199px) {
+                .wrapper .message {
+                    font-size: 48px;
+                    margin: 32px 0;
+                }
+
+                .wrapper .caption {
+                    font-size: 20px;
+                }
+            }
+            /* Extra large devices (large desktops, 1200px and up) */
+            @media (min-width: 1200px) {
+                .wrapper .message {
+                    font-size: 52px;
+                }
+
+                .wrapper .caption {
+                    font-size: 22px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <img class="banner" src="{{ .Values.maintenance.bannerURL }}" alt="banner" />
+            <h1 class="message">{{ .Values.maintenance.message }}</h1>
+            <p class="caption">{{ .Values.maintenance.caption }}</p>
+        </div>
+    </body>
+    </html>
