@@ -1,0 +1,28 @@
+replicaCount: 1
+
+namespace: default
+
+image:
+  repository: caddy
+  tag: "2.6.2"
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 80
+
+ingress:
+  enabled: true
+  className: "nginx"
+  host: "maintenance.example.com"
+  annotations: {}
+  tls:
+    enabled: false
+    secretName: ""
+
+maintenance:
+  title: "Maintenance"
+  message: "We are under maintenance"
+  caption: "Thank you for your patience"
+  bannerURL: https://raw.githubusercontent.com/codewithemad/maintenance-chart/master/images/disconnected-banner.png
+  faviconURL: https://raw.githubusercontent.com/codewithemad/maintenance-chart/master/images/favicon.ico
