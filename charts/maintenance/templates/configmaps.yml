@@ -140,7 +140,7 @@ data:
     </head>
     <body>
         <div class="wrapper">
-            <img class="banner" src="{{ .Values.maintenance.bannerURL }}" alt="banner" />
+            <img class="banner" src="{{ .Values.maintenance.bannerURL }}" alt="Maintenance banner" />
             <h1 class="message">{{ .Values.maintenance.message }}</h1>
             <p class="caption">{{ .Values.maintenance.caption }}</p>
         </div>
