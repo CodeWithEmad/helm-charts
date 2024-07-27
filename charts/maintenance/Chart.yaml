@@ -1,24 +1,21 @@
 apiVersion: v2
 name: maintenance
-description: A Helm chart for Kubernetes
-
-# A chart can be either an 'application' or a 'library' chart.
-#
-# Application charts are a collection of templates that can be packaged into versioned archives
-# to be deployed.
-#
-# Library charts provide useful utilities or functions for the chart developer. They're included as
-# a dependency of application charts to inject those utilities and functions into the rendering
-# pipeline. Library charts do not define any templates and therefore cannot be deployed.
+description: Quickly set up an elegant and user-friendly maintenance page for your services.
+home: https://github.com/codewithemad/helm-charts
+icon: https://raw.githubusercontent.com/codewithemad/helm-charts/master/images/maintenance-logo.png
 type: application
-
-# This is the chart version. This version number should be incremented each time you make changes
-# to the chart and its templates, including the app version.
-# Versions are expected to follow Semantic Versioning (https://semver.org/)
-version: 0.1.3
-
-# This is the version number of the application being deployed. This version number should be
-# incremented each time you make changes to the application. Versions are not expected to
-# follow Semantic Versioning. They should reflect the version the application is using.
-# It is recommended to use it with quotes.
-appVersion: "1.16.0"
+version: 0.1.4
+appVersion: "1.20.0"
+kubeVersion: ">=1.19.0-0"
+keywords:
+  - maintenance
+  - maintenance-mode
+  - maintenance-page
+maintainers:
+  - email: codewithemad@gmail.com
+    name: Emad Rad
+annotations:
+  "artifacthub.io/license": AGPL-3.0
+  "artifacthub.io/links": |
+    - name: Chart Source
+      url: https://github.com/codewithemad/helm-charts
