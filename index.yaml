@@ -8,6 +8,32 @@ entries:
           url: https://github.com/codewithemad/helm-charts
     apiVersion: v2
     appVersion: 1.20.0
+    created: "2024-07-27T14:33:06.659900198Z"
+    description: Quickly set up an elegant and user-friendly maintenance page for
+      your services.
+    digest: 99fa50ae03b170bec0d598896dc3a91c1a81c260958e5706f0acff151e0b2cf2
+    home: https://github.com/codewithemad/helm-charts
+    icon: https://raw.githubusercontent.com/codewithemad/helm-charts/master/images/maintenance-logo.png
+    keywords:
+    - maintenance
+    - maintenance-mode
+    - maintenance-page
+    kubeVersion: '>=1.19.0-0'
+    maintainers:
+    - email: codewithemad@gmail.com
+      name: Emad Rad
+    name: maintenance
+    type: application
+    urls:
+    - https://github.com/CodeWithEmad/helm-charts/releases/download/maintenance-0.1.5/maintenance-0.1.5.tgz
+    version: 0.1.5
+  - annotations:
+      artifacthub.io/license: AGPL-3.0
+      artifacthub.io/links: |
+        - name: Chart Source
+          url: https://github.com/codewithemad/helm-charts
+    apiVersion: v2
+    appVersion: 1.20.0
     created: "2024-07-27T10:41:01.236482133Z"
     description: Quickly set up an elegant and user-friendly maintenance page for
       your services.
@@ -37,4 +63,4 @@ entries:
     urls:
     - https://github.com/CodeWithEmad/maintenance-chart/releases/download/maintenance-0.1.3/maintenance-0.1.3.tgz
     version: 0.1.3
-generated: "2024-07-27T10:41:01.236511187Z"
+generated: "2024-07-27T14:33:06.6599174Z"
