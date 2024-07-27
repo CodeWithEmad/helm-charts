@@ -4,7 +4,7 @@ description: Quickly set up an elegant and user-friendly maintenance page for yo
 home: https://github.com/codewithemad/helm-charts
 icon: https://raw.githubusercontent.com/codewithemad/helm-charts/master/images/maintenance-logo.png
 type: application
-version: 0.1.4
+version: 0.1.5
 appVersion: "1.20.0"
 kubeVersion: ">=1.19.0-0"
 keywords:
