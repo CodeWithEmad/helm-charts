@@ -1,7 +1,9 @@
 Helm Charts Repository
 ======================
 
-[![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/maintenance)](https://artifacthub.io/packages/search?repo=maintenance)
+.. image:: https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/codewithemad
+   :alt: Artifact Hub
+   :target: https://artifacthub.io/packages/search?repo=codewithemad
 
 This repository contains Helm charts for various applications and services.
 
