@@ -52,7 +52,7 @@ The following table lists the configurable parameters of the Maintenance chart a
 | `replicaCount`             | Number of replicas                       | `1`                       |
 | `namespace`                | Kubernetes namespace to use              | `default`                 |
 | `image.repository`         | Image repository                         | `caddy`                   |
-| `image.tag`                | Image tag                                | `2.6.2`                   |
+| `image.tag`                | Image tag                                | `2.9-alpine`                   |
 | `image.pullPolicy`         | Image pull policy                        | `IfNotPresent`            |
 | `service.type`             | Kubernetes Service type                  | `ClusterIP`               |
 | `service.port`             | Kubernetes Service port                  | `80`                      |

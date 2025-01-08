@@ -4,7 +4,7 @@ namespace: default
 
 image:
   repository: caddy
-  tag: "2.6.2"
+  tag: "2.9-alpine"
   pullPolicy: IfNotPresent
 
 service:
