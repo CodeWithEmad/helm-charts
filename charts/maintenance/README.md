@@ -22,7 +22,7 @@ providing a user-friendly message to your visitors.
 To use this chart, first add the repository:
 
 ```bash
-helm repo add codewithemad https://codewithemad.github.io/helm-charts/
+helm repo add codewithemad https://codewithemad.ir/helm-charts/
 helm repo update
 ```
 

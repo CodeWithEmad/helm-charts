@@ -23,7 +23,7 @@ To use the charts from this repository, follow these steps:
 
    .. code-block:: bash
 
-      helm repo add codewithemad https://codewithemad.github.io/helm-charts/
+      helm repo add codewithemad https://codewithemad.ir/helm-charts/
 
 2. Update your local Helm chart repository cache:
 
