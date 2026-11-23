@@ -2,9 +2,9 @@ apiVersion: v2
 name: maintenance
 description: Quickly set up an elegant and user-friendly maintenance page for your services.
 home: https://github.com/codewithemad/helm-charts
-icon: https://raw.githubusercontent.com/codewithemad/helm-charts/master/images/maintenance-logo.png
+icon: https://raw.githubusercontent.com/codewithemad/helm-charts/main/images/maintenance-logo.png
 type: application
-version: 0.1.6
+version: 0.1.7
 appVersion: "1.20.0"
 kubeVersion: ">=1.19.0-0"
 keywords:

@@ -29,8 +29,8 @@ Making Changes
 3. Update documentation, including `README.rst`_ and `CHANGELOG.rst`_, if applicable.
 4. Ensure your code follows the project's style and best practices.
 
-.. _README.rst: https://github.com/codewithemad/helm-charts/blob/master/README.rst
-.. _CHANGELOG.rst: https://github.com/codewithemad/helm-charts/blob/master/CHANGELOG.rst
+.. _README.rst: https://github.com/codewithemad/helm-charts/blob/main/README.rst
+.. _CHANGELOG.rst: https://github.com/codewithemad/helm-charts/blob/main/CHANGELOG.rst
 
 Testing Your Changes
 --------------------

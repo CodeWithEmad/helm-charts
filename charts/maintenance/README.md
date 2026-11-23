@@ -52,7 +52,7 @@ The following table lists the configurable parameters of the Maintenance chart a
 | `replicaCount`             | Number of replicas                       | `1`                       |
 | `namespace`                | Kubernetes namespace to use              | `default`                 |
 | `image.repository`         | Image repository                         | `caddy`                   |
-| `image.tag`                | Image tag                                | `2.9-alpine`                   |
+| `image.tag`                | Image tag                                | `2.11.9-alpine`              |
 | `image.pullPolicy`         | Image pull policy                        | `IfNotPresent`            |
 | `service.type`             | Kubernetes Service type                  | `ClusterIP`               |
 | `service.port`             | Kubernetes Service port                  | `80`                      |
@@ -98,8 +98,8 @@ helm install my-maintenance codewithemad/maintenance -f my-values.yaml
 
 ## Contributing
 
-Contributions are welcome! Please see the [CONTRIBUTING.rst](https://github.com/codewithemad/maintenance-chart/blob/master/CONTRIBUTING.rst) file for details.
+Contributions are welcome! Please see the [CONTRIBUTING.rst](https://github.com/codewithemad/maintenance-chart/blob/main/CONTRIBUTING.rst) file for details.
 
 ## License
 
-This work is licensed under the terms of the [GNU Affero General Public License (AGPL)](https://github.com/codewithemad/maintenance-chart/blob/master/LICENSE).
+This work is licensed under the terms of the [GNU Affero General Public License (AGPL)](https://github.com/codewithemad/maintenance-chart/blob/main/LICENSE).

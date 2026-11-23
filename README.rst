@@ -12,7 +12,7 @@ Available Charts
 
 * `maintenance`_: A chart for deploying a maintenance page.
 
-.. _maintenance: https://github.com/CodeWithEmad/helm-charts/tree/master/charts/maintenance
+.. _maintenance: https://github.com/CodeWithEmad/helm-charts/tree/main/charts/maintenance
 
 Usage
 -----
@@ -44,12 +44,12 @@ Contributing
 
 Contributions are welcome! Please see the `CONTRIBUTING.rst`_ file for details.
 
-.. _CONTRIBUTING.rst: https://github.com/codewithemad/helm-charts/blob/master/CONTRIBUTING.rst
+.. _CONTRIBUTING.rst: https://github.com/codewithemad/helm-charts/blob/main/CONTRIBUTING.rst
 
 License
 -------
 
-This work is licensed under the terms of the `GNU Affero General Public License (AGPL) <https://github.com/codewithemad/helm-charts/blob/master/LICENSE>`_.
+This work is licensed under the terms of the `GNU Affero General Public License (AGPL) <https://github.com/codewithemad/helm-charts/blob/main/LICENSE>`_.
 
 Support
 -------
